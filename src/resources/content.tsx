@@ -13,7 +13,7 @@ const person: Person = {
 };
 
 const newsletter: Newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: <>My weekly newsletter about creativity and engineering</>,
 };
@@ -34,6 +34,12 @@ const social: Social = [
     link: `mailto:${person.email}`,
     essential: true,
   },
+    {
+    name: "Wechat",
+    icon: "email",
+    link: `mailto:${person.email`,
+    essential: true,
+  },
 ];
 
 const home: Home = {
@@ -42,9 +48,9 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>AI-driven discovery for next-generation materials</>,
+  headline: <>Because of your smile, you make life more beautiful.</>,
   featured: {
-    display: true,
+    display: false,
     title: (
       <Row gap="12" vertical="center">
         <strong className="ml-4">Once UI</strong>{" "}
@@ -58,13 +64,13 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Juntao, a Master's student at{" "}
-  <Text as="span" size="xl" weight="strong">
-    Peking University
-  </Text>{" "}
-  focusing on AI4S, specifically large model applications in battery science.
-  <br />
-  A highly promising and impactful research direction.
+    I'm Juntao, a Master's student at{" "}
+    <Text as="span" size="xl" weight="strong">
+      Peking University
+    </Text>{" "}
+    focusing on AI-driven modeling and generative design for battery materials.
+    <br />
+    I aim to bridge machine learning and physical sciences to accelerate discovery.
 </>
   ),
 };
@@ -90,28 +96,32 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Zhao Juntao is a master's student at Peking University. His research focuses on the 
-        application of large-scale models in lithium-ion battery electrolyte design. 
-        He is expected to graduate in July 2027.
+    I am currently pursuing a Master's degree at Peking University,
+    focusing on AI-driven approaches for electrolyte design in lithium-ion batteries.
+    <br /><br />
+    My research lies at the intersection of:
+    <br />
+    - Machine learning for molecular systems  
+    - Cross-scale simulation  
+    - Data-driven materials discovery  
+    I am expected to graduate in July 2027.
       </>
     ),
   },
-  work: {
+  study: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Study Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Peking University",
+        timeframe: "2024 - Present",
+        role: "Master's student",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Genming Lai#, Juntao Zhao#, et al., Jiaxin Zheng* and Chuying Ouyang*. Reusability report: exploring the utility and extensibility of an integrated modeling framework for liquid electrolyte design.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Genming Lai#, Ruiqi Zhang#, Chi Fang, Juntao Zhao, et al., Yunxing Zuo*, Bo Xu*, Jiaxin Zheng*. Machine-learning-accelerated mechanistic exploration of interface modification in lithium metal anode. npj Comput Mater 11,245 (2025).
           </>,
         ],
         images: [
@@ -125,25 +135,66 @@ const about: About = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Southwest University",
+        timeframe: "2020 - 2024",
+        role: "Bachelor",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+             Gaoyuan Xing#, Juntao Zhao#, et al., Yanan Zhao*, Jing Liu*. Lanthanide-grafted covalent organic framework as a colorimetric and luminescence dual-mode nanoprobe for tetracycline detection. Sensors and Actuators B: Chemical，411, 2024, 135724
           </>,
         ],
-        images: [],
+        images: [
+                    // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/cover-05.jpg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+        ],
+      },
+      {
+        company: "Linfen No.1 Middle School, Shanxi Province",
+        timeframe: "2017 - 2020",
+        role: "high school students",
+        images: [
+                    // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/cover-06.jpg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+        ],
+      },
+      {
+        company: "Xiangning No.3 Middle School",
+        timeframe: "2014 - 2017",
+        role: "middle school student",
+        images: [
+                    // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/cover-07.jpg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+        ],
+      },
+            {
+        company: "Yingxu Primary School",
+        timeframe: "2014 - 2017",
+        role: "primary school student",
+        images: [
+                    // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/cover-08.jpg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+        ],
       },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Studies",
     institutions: [
       {
@@ -160,61 +211,15 @@ const about: About = {
     display: true, // set to false to hide this section
     title: "Technical skills",
     skills: [
-      {
-        title: "Figma",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
-        tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+       {
+        title: "Machine Learning",
+        description: <>Deep learning, GNN, generative models</>,
+        tags: [{ name: "PyTorch" },
       },
       {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Materials Modeling",
+        description: <>Molecular simulation and property prediction</>,
+        tags: [{ name: "DFT" }, { name: "MD" }],
       },
     ],
   },
