@@ -34,12 +34,6 @@ const social: Social = [
     link: `mailto:${person.email}`,
     essential: true,
   },
-    {
-    name: "Wechat",
-    icon: "wechat",
-    link: `mailto:${person.email}`,
-    essential: true,
-  },
 ];
 
 const home: Home = {
