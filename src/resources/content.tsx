@@ -36,8 +36,8 @@ const social: Social = [
   },
     {
     name: "Wechat",
-    icon: "email",
-    link: `mailto:${person.email`,
+    icon: "wechat",
+    link: `mailto:${person.email}`,
     essential: true,
   },
 ];
@@ -150,6 +150,7 @@ const about: About = {
             alt: "Once UI Project",
             width: 16,
             height: 9,
+          },            
         ],
       },
       {
@@ -163,6 +164,7 @@ const about: About = {
             alt: "Once UI Project",
             width: 16,
             height: 9,
+          },
         ],
       },
       {
@@ -176,6 +178,7 @@ const about: About = {
             alt: "Once UI Project",
             width: 16,
             height: 9,
+          },
         ],
       },
             {
@@ -189,6 +192,7 @@ const about: About = {
             alt: "Once UI Project",
             width: 16,
             height: 9,
+          },
         ],
       },
     ],
@@ -214,7 +218,8 @@ const about: About = {
        {
         title: "Machine Learning",
         description: <>Deep learning, GNN, generative models</>,
-        tags: [{ name: "PyTorch" },
+        tags: [
+          { name: "PyTorch" }],
       },
       {
         title: "Materials Modeling",
