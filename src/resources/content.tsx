@@ -101,7 +101,7 @@ const about: About = {
       </>
     ),
   },
-  study: {
+  experiences: {
     display: true,
     title: "Education",
     experiences: [
