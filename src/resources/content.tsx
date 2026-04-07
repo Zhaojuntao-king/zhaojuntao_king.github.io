@@ -8,7 +8,7 @@ const person: Person = {
   role: "AI4S Master's Student",
   avatar: "/images/avatar.jpg",
   email: "2401212755@stu.pku.edu.cn",
-  location: "Asia/Shanghai", // IANA 时区标准格式
+  location: "Asia/Shanghai",
   languages: ["Chinese", "English"],
 };
 
@@ -96,7 +96,8 @@ const about: About = {
         • Machine learning for molecular systems<br />
         • Cross-scale simulation<br />
         • Data-driven materials discovery<br />
-    
+        <br />
+
         I am expected to graduate in July 2027.
       </>
     ),
@@ -148,6 +149,7 @@ const about: About = {
         company: "Linfen No.1 High School, Shanxi Province",
         timeframe: "2017 - 2020",
         role: "High School Student",
+        achievements: [], // ✅ 必须加空数组
         images: [
           {
             src: "/images/projects/project-01/cover-06.jpg",
@@ -161,6 +163,7 @@ const about: About = {
         company: "Xiangning No.3 Middle School",
         timeframe: "2014 - 2017",
         role: "Middle School Student",
+        achievements: [], // ✅ 必须加空数组
         images: [
           {
             src: "/images/projects/project-01/cover-07.jpg",
@@ -174,6 +177,7 @@ const about: About = {
         company: "Yingxu Primary School",
         timeframe: "2008 - 2014",
         role: "Primary School Student",
+        achievements: [], // ✅ 必须加空数组
         images: [
           {
             src: "/images/projects/project-01/cover-08.jpg",
@@ -188,16 +192,7 @@ const about: About = {
   studies: {
     display: false,
     title: "Studies",
-    institutions: [
-      {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
-    ],
+    institutions: [],
   },
   technical: {
     display: true,
@@ -206,8 +201,7 @@ const about: About = {
       {
         title: "Machine Learning",
         description: <>Deep learning, GNN, generative models</>,
-        tags: [
-          { name: "PyTorch" }],
+        tags: [{ name: "PyTorch" }],
       },
       {
         title: "Materials Modeling",
@@ -238,46 +232,14 @@ const gallery: Gallery = {
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
   images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
+    { src: "/images/gallery/horizontal-1.jpg", alt: "image", orientation: "horizontal" },
+    { src: "/images/gallery/vertical-4.jpg", alt: "image", orientation: "vertical" },
+    { src: "/images/gallery/horizontal-3.jpg", alt: "image", orientation: "horizontal" },
+    { src: "/images/gallery/vertical-1.jpg", alt: "image", orientation: "vertical" },
+    { src: "/images/gallery/vertical-2.jpg", alt: "image", orientation: "vertical" },
+    { src: "/images/gallery/horizontal-2.jpg", alt: "image", orientation: "horizontal" },
+    { src: "/images/gallery/horizontal-4.jpg", alt: "image", orientation: "horizontal" },
+    { src: "/images/gallery/vertical-3.jpg", alt: "image", orientation: "vertical" },
   ],
 };
 
