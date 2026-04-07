@@ -8,7 +8,7 @@ const person: Person = {
   role: "AI4S Master's student",
   avatar: "/images/avatar.jpg",
   email: "2401212755@stu.pku.edu.cn",
-  location: "Asia/China", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  location: "Asia/Shanghai", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["Chinese", "English"], // optional: Leave the array empty if you don't want to display languages
 };
 
@@ -42,7 +42,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>AI-driven discovery for next-generation materials</>,
   featured: {
     display: true,
     title: (
@@ -58,7 +58,13 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Juntao, a Master's student at <Text as="span" size="xl" weight="strong">Peking University</Text>focusing on AI4S, specifically large model applications in battery science <br />that’s super cool and high-potential research direction.
+      I'm Juntao, a Master's student at{" "}
+  <Text as="span" size="xl" weight="strong">
+    Peking University
+  </Text>{" "}
+  focusing on AI4S, specifically large model applications in battery science
+  <br />
+  a highly promising and impactful research direction.
 </>
   ),
 };
