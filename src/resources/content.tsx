@@ -120,7 +120,7 @@ const about: About = {
         ],
         images: [
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/project-01/cover-09.jpg",
             alt: "Project Cover",
             width: 16,
             height: 9,
