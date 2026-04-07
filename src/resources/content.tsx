@@ -58,7 +58,7 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+    I'm Juntao, a Master's student at <Text as="span" size="xl" weight="strong">Peking University</Text>focusing on AI4S, specifically large model applications in battery science <br />that’s super cool and high-potential research direction.
 </>
   ),
 };
@@ -84,9 +84,9 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Zhao Juntao is a master's student at Peking University. His research focuses on the 
+        application of large-scale models in lithium-ion battery electrolyte design. 
+        He is expected to graduate in July 2027.
       </>
     ),
   },
