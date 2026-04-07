@@ -90,15 +90,17 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-    I am currently pursuing a Master's degree at Peking University,
-    focusing on AI-driven approaches for electrolyte design in lithium-ion batteries.
-    <br /><br />
-    My research lies at the intersection of:
-    <br />
-    - Machine learning for molecular systems  
-    - Cross-scale simulation  
-    - Data-driven materials discovery  
-    I am expected to graduate in July 2027.
+        I am currently pursuing a Master's degree at Peking University,
+        focusing on AI-driven approaches for electrolyte design in lithium-ion batteries.
+        <br /><br />
+    
+        My research lies at the intersection of:
+        <br />
+        • Machine learning for molecular systems<br />
+        • Cross-scale simulation<br />
+        • Data-driven materials discovery<br />
+    
+        I am expected to graduate in July 2027.
       </>
     ),
   },
@@ -177,7 +179,7 @@ const about: About = {
       },
             {
         company: "Yingxu Primary School",
-        timeframe: "2014 - 2017",
+        timeframe: "2008 - 2014",
         role: "primary school student",
         images: [
                     // optional: leave the array empty if you don't want to display images
