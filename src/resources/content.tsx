@@ -5,11 +5,11 @@ const person: Person = {
   firstName: "Juntao",
   lastName: "Zhao",
   name: `Juntao Zhao`,
-  role: "AI4S Master's student",
+  role: "AI4S Master's Student",
   avatar: "/images/avatar.jpg",
   email: "2401212755@stu.pku.edu.cn",
-  location: "Asia/Shanghai", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["Chinese", "English"], // optional: Leave the array empty if you don't want to display languages
+  location: "Asia/Shanghai", // IANA 时区标准格式
+  languages: ["Chinese", "English"],
 };
 
 const newsletter: Newsletter = {
@@ -19,9 +19,6 @@ const newsletter: Newsletter = {
 };
 
 const social: Social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
-  // Set essentials: true for links you want to show on the about page
   {
     name: "GitHub",
     icon: "github",
@@ -58,14 +55,14 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Juntao, a Master's student at{" "}
-    <Text as="span" size="xl" weight="strong">
-      Peking University
-    </Text>{" "}
-    focusing on AI-driven modeling and generative design for battery materials.
-    <br />
-    I aim to bridge machine learning and physical sciences to accelerate discovery.
-</>
+      I'm Juntao, a Master's student at{" "}
+      <Text as="span" size="xl" weight="strong">
+        Peking University
+      </Text>{" "}
+      focusing on AI-driven modeling and generative design for battery materials.
+      <br />
+      I aim to bridge machine learning and physical sciences to accelerate material discovery.
+    </>
   ),
 };
 
@@ -105,26 +102,25 @@ const about: About = {
     ),
   },
   study: {
-    display: true, // set to false to hide this section
-    title: "Study Experience",
+    display: true,
+    title: "Education",
     experiences: [
       {
         company: "Peking University",
         timeframe: "2024 - Present",
-        role: "Master's student",
+        role: "Master's Student",
         achievements: [
           <>
-            Genming Lai#, Juntao Zhao#, et al., Jiaxin Zheng* and Chuying Ouyang*. Reusability report: exploring the utility and extensibility of an integrated modeling framework for liquid electrolyte design.
+            Genming Lai#, Juntao Zhao#, et al., Jiaxin Zheng* & Chuying Ouyang*. Reusability report: exploring the utility and extensibility of an integrated modeling framework for liquid electrolyte design.
           </>,
           <>
-            Genming Lai#, Ruiqi Zhang#, Chi Fang, Juntao Zhao, et al., Yunxing Zuo*, Bo Xu*, Jiaxin Zheng*. Machine-learning-accelerated mechanistic exploration of interface modification in lithium metal anode. npj Comput Mater 11,245 (2025).
+            Genming Lai#, Ruiqi Zhang#, Chi Fang, Juntao Zhao, et al., Yunxing Zuo*, Bo Xu*, Jiaxin Zheng*. Machine-learning-accelerated mechanistic exploration of interface modification in lithium metal anode. npj Computational Materials 11, 245 (2025).
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            alt: "Project Cover",
             width: 16,
             height: 9,
           },
@@ -133,31 +129,29 @@ const about: About = {
       {
         company: "Southwest University",
         timeframe: "2020 - 2024",
-        role: "Bachelor",
+        role: "Undergraduate Student",
         achievements: [
           <>
-             Gaoyuan Xing#, Juntao Zhao#, et al., Yanan Zhao*, Jing Liu*. Lanthanide-grafted covalent organic framework as a colorimetric and luminescence dual-mode nanoprobe for tetracycline detection. Sensors and Actuators B: Chemical，411, 2024, 135724
+            Gaoyuan Xing#, Juntao Zhao#, et al., Yanan Zhao*, Jing Liu*. Lanthanide-grafted covalent organic framework as a colorimetric and luminescence dual-mode nanoprobe for tetracycline detection. Sensors and Actuators B: Chemical, 411, 2024, 135724.
           </>,
         ],
         images: [
-                    // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-05.jpg",
-            alt: "Once UI Project",
+            alt: "Project Cover",
             width: 16,
             height: 9,
           },            
         ],
       },
       {
-        company: "Linfen No.1 Middle School, Shanxi Province",
+        company: "Linfen No.1 High School, Shanxi Province",
         timeframe: "2017 - 2020",
-        role: "high school students",
+        role: "High School Student",
         images: [
-                    // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-06.jpg",
-            alt: "Once UI Project",
+            alt: "School Photo",
             width: 16,
             height: 9,
           },
@@ -166,26 +160,24 @@ const about: About = {
       {
         company: "Xiangning No.3 Middle School",
         timeframe: "2014 - 2017",
-        role: "middle school student",
+        role: "Middle School Student",
         images: [
-                    // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-07.jpg",
-            alt: "Once UI Project",
+            alt: "School Photo",
             width: 16,
             height: 9,
           },
         ],
       },
-            {
+      {
         company: "Yingxu Primary School",
         timeframe: "2008 - 2014",
-        role: "primary school student",
+        role: "Primary School Student",
         images: [
-                    // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-08.jpg",
-            alt: "Once UI Project",
+            alt: "School Photo",
             width: 16,
             height: 9,
           },
@@ -194,7 +186,7 @@ const about: About = {
     ],
   },
   studies: {
-    display: false, // set to false to hide this section
+    display: false,
     title: "Studies",
     institutions: [
       {
@@ -208,10 +200,10 @@ const about: About = {
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Technical Skills",
     skills: [
-       {
+      {
         title: "Machine Learning",
         description: <>Deep learning, GNN, generative models</>,
         tags: [
@@ -231,8 +223,6 @@ const blog: Blog = {
   label: "Blog",
   title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
 };
 
 const work: Work = {
@@ -240,8 +230,6 @@ const work: Work = {
   label: "Work",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
 };
 
 const gallery: Gallery = {
@@ -249,8 +237,6 @@ const gallery: Gallery = {
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
   images: [
     {
       src: "/images/gallery/horizontal-1.jpg",
