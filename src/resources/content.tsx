@@ -8,7 +8,7 @@ const person: Person = {
   role: "AI4S Master's Student",
   avatar: "/images/avatar.jpg",
   email: "2401212755@stu.pku.edu.cn",
-  location: "Asia/Shanghai",
+  location: "Asia/Shanghai", // IANA 时区标准格式
   languages: ["Chinese", "English"],
 };
 
@@ -101,10 +101,103 @@ const about: About = {
       </>
     ),
   },
+  work: {
+    display: true,
+    title: "Education",
+    experiences: [
+      {
+        company: "Peking University",
+        timeframe: "2024 - Present",
+        role: "Master's Student",
+        achievements: [
+          <>
+            Genming Lai#, Juntao Zhao#, et al., Jiaxin Zheng* & Chuying Ouyang*. Reusability report: exploring the utility and extensibility of an integrated modeling framework for liquid electrolyte design.
+          </>,
+          <>
+            Genming Lai#, Ruiqi Zhang#, Chi Fang, Juntao Zhao, et al., Yunxing Zuo*, Bo Xu*, Jiaxin Zheng*. Machine-learning-accelerated mechanistic exploration of interface modification in lithium metal anode. npj Computational Materials 11, 245 (2025).
+          </>,
+        ],
+        images: [
+          {
+            src: "/images/projects/project-01/cover-01.jpg",
+            alt: "Project Cover",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        company: "Southwest University",
+        timeframe: "2020 - 2024",
+        role: "Undergraduate Student",
+        achievements: [
+          <>
+            Gaoyuan Xing#, Juntao Zhao#, et al., Yanan Zhao*, Jing Liu*. Lanthanide-grafted covalent organic framework as a colorimetric and luminescence dual-mode nanoprobe for tetracycline detection. Sensors and Actuators B: Chemical, 411, 2024, 135724.
+          </>,
+        ],
+        images: [
+          {
+            src: "/images/projects/project-01/cover-05.jpg",
+            alt: "Project Cover",
+            width: 16,
+            height: 9,
+          },            
+        ],
+      },
+      {
+        company: "Linfen No.1 High School, Shanxi Province",
+        timeframe: "2017 - 2020",
+        role: "High School Student",
+        images: [
+          {
+            src: "/images/projects/project-01/cover-06.jpg",
+            alt: "School Photo",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        company: "Xiangning No.3 Middle School",
+        timeframe: "2014 - 2017",
+        role: "Middle School Student",
+        images: [
+          {
+            src: "/images/projects/project-01/cover-07.jpg",
+            alt: "School Photo",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        company: "Yingxu Primary School",
+        timeframe: "2008 - 2014",
+        role: "Primary School Student",
+        images: [
+          {
+            src: "/images/projects/project-01/cover-08.jpg",
+            alt: "School Photo",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+    ],
+  },
   studies: {
     display: false,
     title: "Studies",
-    institutions: [],
+    institutions: [
+      {
+        name: "University of Jakarta",
+        description: <>Studied software engineering.</>,
+      },
+      {
+        name: "Build the Future",
+        description: <>Studied online marketing and personal branding.</>,
+      },
+    ],
   },
   technical: {
     display: true,
@@ -113,7 +206,8 @@ const about: About = {
       {
         title: "Machine Learning",
         description: <>Deep learning, GNN, generative models</>,
-        tags: [{ name: "PyTorch" }],
+        tags: [
+          { name: "PyTorch" }],
       },
       {
         title: "Materials Modeling",
@@ -144,14 +238,46 @@ const gallery: Gallery = {
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
   images: [
-    { src: "/images/gallery/horizontal-1.jpg", alt: "image", orientation: "horizontal" },
-    { src: "/images/gallery/vertical-4.jpg", alt: "image", orientation: "vertical" },
-    { src: "/images/gallery/horizontal-3.jpg", alt: "image", orientation: "horizontal" },
-    { src: "/images/gallery/vertical-1.jpg", alt: "image", orientation: "vertical" },
-    { src: "/images/gallery/vertical-2.jpg", alt: "image", orientation: "vertical" },
-    { src: "/images/gallery/horizontal-2.jpg", alt: "image", orientation: "horizontal" },
-    { src: "/images/gallery/horizontal-4.jpg", alt: "image", orientation: "horizontal" },
-    { src: "/images/gallery/vertical-3.jpg", alt: "image", orientation: "vertical" },
+    {
+      src: "/images/gallery/horizontal-1.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/vertical-4.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/horizontal-3.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/vertical-1.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/vertical-2.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/horizontal-2.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/horizontal-4.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/vertical-3.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
   ],
 };
 
