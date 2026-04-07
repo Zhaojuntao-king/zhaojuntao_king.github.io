@@ -5,11 +5,11 @@ const person: Person = {
   firstName: "Juntao",
   lastName: "Zhao",
   name: `Juntao Zhao`,
-  role: "Design Engineer",
+  role: "AI4S Master's student",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "2401212755@stu.pku.edu.cn",
+  location: "Asia/China", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["Chinese", "English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -25,25 +25,7 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
-    essential: true,
-  },
-  {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-    essential: true,
-  },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://github.com/Zhaojuntao-king",
     essential: true,
   },
   {
