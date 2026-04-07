@@ -62,9 +62,9 @@ const home: Home = {
   <Text as="span" size="xl" weight="strong">
     Peking University
   </Text>{" "}
-  focusing on AI4S, specifically large model applications in battery science
+  focusing on AI4S, specifically large model applications in battery science.
   <br />
-  a highly promising and impactful research direction.
+  A highly promising and impactful research direction.
 </>
   ),
 };
