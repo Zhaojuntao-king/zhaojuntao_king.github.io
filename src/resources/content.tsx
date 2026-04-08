@@ -205,7 +205,7 @@ const about: About = {
 };
 
 const blog: Blog = {
-  disolay: false,
+  display: false,
   path: "/blog",
   label: "Blog",
   title: "Writing about design and tech...",
@@ -213,7 +213,7 @@ const blog: Blog = {
 };
 
 const work: Work = {
-  disolay: false,
+  display: false,
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
