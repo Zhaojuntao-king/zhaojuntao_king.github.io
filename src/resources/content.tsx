@@ -204,22 +204,6 @@ const about: About = {
   },
 };
 
-const blog: Blog = {
-  display: false,
-  path: "/blog",
-  label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-};
-
-const work: Work = {
-  display: false,
-  path: "/work",
-  label: "Work",
-  title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-};
-
 const gallery: Gallery = {
   path: "/gallery",
   label: "Gallery",
@@ -237,4 +221,4 @@ const gallery: Gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, gallery };
