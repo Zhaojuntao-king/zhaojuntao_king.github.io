@@ -20,15 +20,15 @@ const newsletter: Newsletter = {
 
 const social: Social = [
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/Zhaojuntao-king",
-    essential: true,
-  },
-  {
     name: "Email",
     icon: "email",
     link: `mailto:${person.email}`,
+    essential: true,
+  },
+    {
+    name: "GitHub",
+    icon: "github",
+    link: "https://github.com/Zhaojuntao-king",
     essential: true,
   },
 ];
@@ -42,16 +42,6 @@ const home: Home = {
   headline: <>Because of your smile, you make life more beautiful.</>,
   featured: {
     display: false,
-    title: (
-      <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
-        <Line background="brand-alpha-strong" vert height="20" />
-        <Text marginRight="4" onBackground="brand-medium">
-          Featured work
-        </Text>
-      </Row>
-    ),
-    href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
     <>
@@ -213,6 +203,7 @@ const about: About = {
 };
 
 const blog: Blog = {
+  disolay: false,
   path: "/blog",
   label: "Blog",
   title: "Writing about design and tech...",
@@ -220,6 +211,7 @@ const blog: Blog = {
 };
 
 const work: Work = {
+  disolay: false,
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
