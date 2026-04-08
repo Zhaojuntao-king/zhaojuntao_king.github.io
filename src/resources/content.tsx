@@ -42,6 +42,8 @@ const home: Home = {
   headline: <>Because of your smile, you make life more beautiful.</>,
   featured: {
     display: false,
+    title: "",
+    href: "/",
   },
   subline: (
     <>
