@@ -83,7 +83,7 @@ export default function HomePage() {
           <Heading wrap="balance" variant="display-strong-m">
             Selected Projects
           </Heading>
-          <Row fillWidth gap="12" flexWrap>
+          <Row fillWidth gap="12" wrap>
             {about.work.experiences.map((exp, i) =>
               exp.images.map((img, j) => (
                 <img
@@ -104,7 +104,7 @@ export default function HomePage() {
           <Heading wrap="balance" variant="display-strong-m">
             Highlights
           </Heading>
-          <Row fillWidth gap="12" flexWrap>
+          <Row fillWidth gap="12" wrap>
             {home.highlights.map((img, idx) => (
               <img
                 key={idx}
