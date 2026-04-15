@@ -56,6 +56,20 @@ const home: Home = {
       I aim to bridge machine learning and physical sciences to accelerate material discovery.
     </>
   ),
+  highlights: [
+    {
+      src: "/images/gallery/horizontal-1.jpg",
+      alt: "Electrolyte modeling",
+    },
+    {
+      src: "/images/gallery/horizontal-2.jpg",
+      alt: "Battery materials",
+    },
+    {
+      src: "/images/gallery/horizontal-3.jpg",
+      alt: "AI-driven design",
+    },
+  ],
 };
 
 const about: About = {
