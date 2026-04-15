@@ -85,12 +85,23 @@ export default function HomePage() {
           </Heading>
           <Row fillWidth gap="12" wrap>
             {about.work.experiences.map((exp, i) =>
-              exp.images.map((img, j) => (
-                <img
+                exp.images?.map((img, j) => (
+                  <img
                   key={`${i}-${j}`}
                   src={img.src}
                   alt={img.alt}
-                  style={{ width: "30%", borderRadius: "12px" }}
+                  style={{
+                    width: "30%",
+                    borderRadius: "12px",
+                    transition: "all 0.4s ease",
+                    cursor: "pointer",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = "scale(1.05)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = "scale(1)";
+                  }}
                 />
               ))
             )}
