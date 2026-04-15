@@ -110,7 +110,7 @@ export default function HomePage() {
       )}
 
       {/* 首页图片网格 */}
-      {home.highlights?.length > 0 && (
+      {(home.highlights?.length ?? 0) > 0 && (
         <Column fillWidth horizontal="center" paddingY="24">
           <Heading wrap="balance" variant="display-strong-m">
             Highlights
