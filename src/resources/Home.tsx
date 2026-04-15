@@ -121,7 +121,12 @@ export default function HomePage() {
                 key={idx}
                 src={img.src}
                 alt={img.alt}
-                style={{ width: "32%", borderRadius: "12px" }}
+                style={{
+                  width: "300px",
+                  height: "200px",
+                  objectFit: "cover",
+                  borderRadius: "12px",
+                }}
               />
             ))}
           </Row>
