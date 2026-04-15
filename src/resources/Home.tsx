@@ -116,7 +116,7 @@ export default function HomePage() {
             Highlights
           </Heading>
           <Row fillWidth gap="12" wrap>
-            {home.highlights.map((img, idx) => (
+            {home.highlights?.map((img, idx) => (
               <img
                 key={idx}
                 src={img.src}
