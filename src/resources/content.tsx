@@ -58,7 +58,7 @@ const home: Home = {
   ),
   highlights: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
+      src: "/images/gallery/vertical-1.jpg",
       alt: "Electrolyte modeling",
     },
     {
