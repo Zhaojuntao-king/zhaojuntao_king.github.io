@@ -49,6 +49,10 @@ export default async function RootLayout({
           name="google-site-verification"
           content="Icpze9xTO4TKzKnkqtOXvppVtAcI4STtR0Bf93smfLI"
         />
+        <meta
+          name="msvalidate.01"
+          content="59BA10B9FC1228F96F13803594F64062"
+        />
         
         <script
           id="theme-init"
