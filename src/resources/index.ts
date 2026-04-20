@@ -8,6 +8,8 @@ export {
   gallery,
 } from "./content";
 
+export { default as HomePage } from "./Home";
+
 export {
   display,
   mailchimp,

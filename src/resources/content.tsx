@@ -1,6 +1,5 @@
 import { About, Gallery, Home, Newsletter, Person, Social } from "@/types";
 import { Line, Row, Text } from "@once-ui-system/core";
-import { home } from "@/resources";
 
 const person: Person = {
   firstName: "Juntao",
@@ -40,7 +39,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Because of your smile, you make life more beautiful.</>,
+  headline: <>欢迎来到我的个人主页！</>,
   featured: {
     display: false,
     title: <></>,
@@ -48,26 +47,26 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Juntao, a Master's student at{" "}
+      我是赵骏涛，目前就读于{" "}
       <Text as="span" size="xl" weight="strong">
-        Peking University
+      北京大学    
       </Text>{" "}
-      focusing on AI-driven modeling and generative design for battery materials.
+      我的研究方向是大模型在锂电池电解液中的应用。
       <br />
-      I aim to bridge machine learning and physical sciences to accelerate material discovery.
+      在我的个人主页中展示了我的求学经历以及与朋友们的一些照片，欢迎大家浏览！😊
     </>
   ),
   highlights: [
     {
-      src: "/images/gallery/vertical-1.jpg",
+      src: "images/projects/project-01/cover-02.jpg",
       alt: "Electrolyte modeling",
     },
     {
-      src: "/images/gallery/horizontal-2.jpg",
+      src: "images/projects/project-01/cover-03.jpg",
       alt: "Battery materials",
     },
     {
-      src: "/images/gallery/horizontal-3.jpg",
+      src: "images/projects/project-01/cover-04.jpg",
       alt: "AI-driven design",
     },
   ],
@@ -114,7 +113,7 @@ const about: About = {
     title: "Education",
     experiences: [
       {
-        company: "Peking University",
+        company: "Peking University 北京大学",
         timeframe: "2024 - Present",
         role: "Master's Student",
         achievements: [
@@ -129,13 +128,13 @@ const about: About = {
           {
             src: "/images/projects/project-01/cover-09.jpg",
             alt: "Project Cover",
-            width: 16,
-            height: 9,
+            width: 20,
+            height: 12,
           },
         ],
       },
       {
-        company: "Southwest University",
+        company: "Southwest University 西南大学",
         timeframe: "2020 - 2024",
         role: "Undergraduate Student",
         achievements: [
@@ -147,13 +146,13 @@ const about: About = {
           {
             src: "/images/projects/project-01/cover-05.jpg",
             alt: "Project Cover",
-            width: 16,
-            height: 9,
+            width: 15,
+            height: 10,
           },            
         ],
       },
       {
-        company: "Linfen No.1 High School, Shanxi Province",
+        company: "Linfen No.1 High School, Shanxi Province 临汾一中",
         timeframe: "2017 - 2020",
         role: "High School Student",
         achievements: [], // ✅ 必须加空数组
@@ -161,13 +160,13 @@ const about: About = {
           {
             src: "/images/projects/project-01/cover-06.jpg",
             alt: "School Photo",
-            width: 16,
-            height: 9,
+            width: 20,
+            height: 12,
           },
         ],
       },
       {
-        company: "Xiangning No.3 Middle School",
+        company: "Xiangning No.3 Middle School 乡宁三中",
         timeframe: "2014 - 2017",
         role: "Middle School Student",
         achievements: [], // ✅ 必须加空数组
@@ -175,13 +174,13 @@ const about: About = {
           {
             src: "/images/projects/project-01/cover-07.jpg",
             alt: "School Photo",
-            width: 16,
-            height: 9,
+            width: 20,
+            height: 12,
           },
         ],
       },
       {
-        company: "Yingxu Primary School",
+        company: "Yingxu Primary School 迎旭小学",
         timeframe: "2008 - 2014",
         role: "Primary School Student",
         achievements: [], // ✅ 必须加空数组
@@ -189,8 +188,8 @@ const about: About = {
           {
             src: "/images/projects/project-01/cover-08.jpg",
             alt: "School Photo",
-            width: 16,
-            height: 9,
+            width: 20,
+            height: 12,
           },
         ],
       },

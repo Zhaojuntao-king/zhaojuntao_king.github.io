@@ -1,20 +1,20 @@
 "use client";
 
+import { useState } from "react";
 import { Column, Row, Text, Heading, Badge, RevealFx, Avatar, Button, Schema, Meta, Line } from "@once-ui-system/core";
 import { home, about, person, baseURL } from "@/resources";
 import { Mailchimp } from "@/components";
 
-export async function generateMetadata() {
-  return Meta.generate({
-    title: home.title,
-    description: home.description,
-    baseURL: baseURL,
-    path: home.path,
-    image: home.image,
-  });
-}
-
 export default function HomePage() {
+  const [currentHighlight, setCurrentHighlight] = useState(0);
+  const highlights = home.highlights ?? [];
+  const currentHighlightImage = highlights[currentHighlight];
+
+  const showNextHighlight = () => {
+    if (highlights.length === 0) return;
+    setCurrentHighlight((prev) => (prev + 1) % highlights.length);
+  };
+
   return (
     <Column maxWidth="xl" gap="xl" paddingY="12" horizontal="center">
       {/* SEO Metadata */}
@@ -33,15 +33,17 @@ export default function HomePage() {
       />
 
       {/* 顶部封面图 */}
-      <div
+      <img
+        src={home.image}
+        alt="Home cover"
         style={{
-          width: "100%",
-          height: "400px",
-          backgroundImage: `url(${home.image})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          width: "auto",
+          maxWidth: "100%",
+          height: "auto",
+          objectFit: "contain",
           borderRadius: "16px",
           marginBottom: "24px",
+          display: "block",
         }}
       />
 
@@ -77,59 +79,43 @@ export default function HomePage() {
         </RevealFx>
       </Column>
 
-      {/* 精选项目图片 */}
-      {about.work.display && (
-        <Column fillWidth horizontal="center" paddingY="24">
-          <Heading wrap="balance" variant="display-strong-m">
-            Selected Projects
-          </Heading>
-          <Row fillWidth gap="12" wrap>
-            {about.work.experiences.map((exp, i) =>
-                exp.images?.map((img, j) => (
-                  <img
-                  key={`${i}-${j}`}
-                  src={img.src}
-                  alt={img.alt}
-                  style={{
-                    width: "30%",
-                    borderRadius: "12px",
-                    transition: "all 0.4s ease",
-                    cursor: "pointer",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = "scale(1.05)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = "scale(1)";
-                  }}
-                />
-              ))
-            )}
-          </Row>
-        </Column>
-      )}
-
-      {/* 首页图片网格 */}
-      {(home.highlights?.length ?? 0) > 0 && (
-        <Column fillWidth horizontal="center" paddingY="24">
+      {/* 首页图片切换播放 */}
+      {currentHighlightImage && (
+        <Column fillWidth horizontal="center" paddingY="24" gap="16">
           <Heading wrap="balance" variant="display-strong-m">
             Highlights
           </Heading>
-          <Row fillWidth gap="12" wrap>
-            {home.highlights?.map((img, idx) => (
-              <img
-                key={idx}
-                src={img.src}
-                alt={img.alt}
-                style={{
-                  width: "300px",
-                  height: "200px",
-                  objectFit: "cover",
-                  borderRadius: "12px",
-                }}
-              />
-            ))}
-          </Row>
+          <div
+            role="button"
+            tabIndex={0}
+            onClick={showNextHighlight}
+            onKeyDown={(event) => {
+              if (event.key === "Enter" || event.key === " ") {
+                showNextHighlight();
+              }
+            }}
+            style={{
+              width: "100%",
+              maxWidth: "960px",
+              cursor: "pointer",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <img
+              src={currentHighlightImage.src}
+              alt={currentHighlightImage.alt}
+              style={{
+                objectFit: "cover",
+                borderRadius: "16px",
+                width: "100%",
+              }}
+            />
+          </div>
+          <Text onBackground="neutral-weak" variant="label-default-s">
+            Click image to view next highlight ({currentHighlight + 1}/{highlights.length})
+          </Text>
         </Column>
       )}
 
