@@ -1,5 +1,6 @@
 import { About, Gallery, Home, Newsletter, Person, Social } from "@/types";
 import { Line, Row, Text } from "@once-ui-system/core";
+import { home } from "@/resources";
 
 const person: Person = {
   firstName: "Juntao",
